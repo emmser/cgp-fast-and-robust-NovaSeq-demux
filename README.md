@@ -8,21 +8,24 @@
 ## Project summary
 | | |
 |-|-|
-| **Goal** | *reference a goal here* |
-| **Priority** | *Priority of project (1,2, or 3)* |
-| **Estimated duration** | *Estimation of time to complete* |
-| **Team Members** | *Initials of team members involved in project* |
-| **Coordinator** | *Initials of project coordinator* |
-| **External Members** | *If there are any members outside CG* |
+| **Goal** | *Robust NovaSeq demux* |
+| **Priority** | *1* |
+| **Estimated duration** | *3 months* |
+| **Team Members** | *ES, BS, KN* |
+| **Coordinator** | *ES* |
+| **External Members** | *-* |
 
 ## Project description
 
-*This section should give a brief project descrition, fill in below*
+*We can remove demultiplexing as a bottleneck in our workflows, this can be achieved by moving the demultiplexing to Hasta and also doing it on the Dragen hardware whenever possible. We can improve the possibility to overview the demultiplexing by having cg starting it and Trailblazer monitoring it. We can be more transparent towards our customers if we have integrated demux into cg and can show dates and demux version on the Delivery Report. First we have to make the demux-process more robust and easy to handle for example re-runs of problematic runs*
 
 ### Aim(s)
 
-1. *first aim*
-1. *second aim*
+1. *Search unmatched reads for index errors*
+2. *Correct the way the demultiplexed fastq-files are added in the database since the data today are named using line number in Sample Sheet, and that Leeds to duplicated data in cases we need to correct a demultiplexing that have been done using an incorrect sample sheet.*
+3. *Add documentation about how to deal with flow cells taken back from PDC*
+4. *Save Undetermined files also on hasta since they are removed from Thalamus*
+5. *Integrate demultiplexing in cg if possible, see also issue #65*
 
 ### Description
 
